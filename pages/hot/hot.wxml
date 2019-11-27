@@ -1,2 +1,16 @@
 <!--pages/hot/hot.wxml-->
-<text>pages/hot/hot.wxml</text>
+<view class="container">
+  <view class="block6" wx:for="{{productArr}}" wx:key="*this">
+    <view class="top">
+      <view class="line"></view>
+      <view class="title">{{item.title}}</view>
+    </view>
+    <view class="down1">
+      <view wx:for="{{item.subArr}}" wx:key="*this" wx:for-item="items">
+        <image src="{{items.imgSrc}}"></image>
+        <view>{{items.imgText}}</view>
+      </view>
+    </view>
+  </view>
+  <gua-kao bind:toTop="toTop"></gua-kao>
+</view>

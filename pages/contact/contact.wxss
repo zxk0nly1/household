@@ -1,1 +1,9 @@
 /* pages/contact/contact.wxss */
+.container{
+  height: 100vh;
+}
+.info{
+  background: #fff;
+  padding: 20rpx 2%;
+  margin-top: 20rpx;
+}

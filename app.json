@@ -1,46 +1,48 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/hot/hot",
     "pages/new/new",
-    "pages/contact/contact"
+    "pages/hot/hot",
+    "pages/contact/contact",
+    "pages/map/map",
+    "components/guakao/guakao"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "首页",
+    "navigationBarTitleText": "家居电商首页",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#aaa",
-    "selectedColor": "#DDA520",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "/images/bar/00bar-1-old.png",
-      "selectedIconPath": "/images/bar/00bar-1-new.png"
-    },
-    {
-      "pagePath": "pages/hot/hot",
-      "text": "热销产品",
-      "iconPath": "/images/bar/00bar-2-old.png",
-      "selectedIconPath": "/images/bar/00bar-2-new.png"
-    },
-    {
-      "pagePath": "pages/new/new",
-      "text": "新品特惠",
-      "iconPath": "/images/bar/00bar-3-old.png",
-      "selectedIconPath": "/images/bar/00bar-3-new.png"
-    },
-    {
-      "pagePath": "pages/contact/contact",
-      "text": "联系我们",
-      "iconPath": "/images/bar/00bar-4-old.png",
-      "selectedIconPath": "/images/bar/00bar-4-new.png"
-    }
+    "selectedColor": "#DAA520",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/bar/00bar-1-old.png",
+        "selectedIconPath": "/images/bar/00bar-1-new.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "热销产品",
+        "iconPath": "/images/bar/00bar-2-old.png",
+        "selectedIconPath": "/images/bar/00bar-2-new.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "新品特惠",
+        "iconPath": "/images/bar/00bar-3-old.png",
+        "selectedIconPath": "/images/bar/00bar-3-new.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "/images/bar/00bar-4-old.png",
+        "selectedIconPath": "/images/bar/00bar-4-new.png"
+      }
     ]
   }
-  
 }

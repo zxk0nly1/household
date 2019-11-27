@@ -1,0 +1,142 @@
+/**index.wxss**/
+swiper, swiper-item, image{
+  width: 100%;
+  height: 400rpx;
+}
+
+.swiper{
+  position: relative;
+}
+
+.indicator{
+  position: absolute;
+  right: 0;
+  bottom: 10rpx;
+}
+
+.indicator view{
+  width: 20rpx;
+  height: 20rpx;
+  background: #000;
+  border-radius: 20rpx;
+  float: left;
+  margin: 0 10rpx;
+  transition: width 0.5s;   /* css3中的属性，过渡属性 */
+}
+
+.indicator view.active{
+  width: 40rpx;
+  background: #DAA520;
+}
+
+/*---------------------------block2---------------------------*/
+
+.block2{
+  background: #fff;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.block2>view{
+  width: 16%;
+}
+
+.block2>view image{
+  width: 100%;
+  height: 100rpx;
+}
+
+.block2>view view{
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+}
+
+/*---------------------------block3---------------------------*/
+
+.block3{
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.block3 .top{
+  height: 100rpx;
+  position: relative;
+}
+
+.block3 .top .line{
+  width: 30%;
+  height: 2px;
+  background: #ccc;
+  /* 定位居中 */
+  position: absolute;
+  left: 0;top: 0;right: 0;bottom: 0;
+  margin: auto;
+}
+
+.block3 .top .title{
+  width: 24%;
+  background: #fff;
+  position: absolute;
+  left: 0;top: 0;right: 0;bottom: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 100rpx;
+}
+
+
+/*---------------------------block4---------------------------*/
+
+.block4{
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.block4 image{
+  width: 100%;
+  display: block;
+}
+
+/*---------------------------block5---------------------------*/
+
+.block5{
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.block5 image{
+  width: 46%;
+  height: 500rpx;
+  border-radius: 4rpx;
+}
+
+/*---------------------------block6---------------------------*/
+
+.down1{
+  border-top: 2rpx solid #ccc;
+  padding: 40rpx 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.down1 image{
+  width: 48%;
+  height: 250rpx;
+  margin-bottom: 20rpx;
+  border-radius: 8rpx;
+}
+
+
+

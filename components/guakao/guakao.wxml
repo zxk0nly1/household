@@ -1,0 +1,6 @@
+<!--components/guakao/guakao.wxml-->
+<view class="guakao">
+  <view bindtap="toTop"><text class="iconfont icon1"></text></view>
+  <view bindtap="callFn"><text class="iconfont icon2"></text></view>
+  <view bindtap="map"><text class="iconfont icon3"></text></view>
+</view>

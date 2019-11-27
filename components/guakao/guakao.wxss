@@ -1,0 +1,29 @@
+/* components/guakao/guakao.wxss */
+@import '/iconfont/iconfont.wxss';
+.guakao{
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 100rpx;
+}
+
+.guakao view{
+  width: 100rpx;
+  height: 100rpx;
+  background: rgba(250,250,250,0.9);
+  border-radius: 50%;
+  margin-top: 20rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.icon1::after{
+  content: "\e612";
+}
+
+.icon2::after{
+  content: "\e601";
+}
+.icon3::after{
+  content: "\e697";
+}

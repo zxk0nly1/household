@@ -1,1 +1,55 @@
-/* pages/hot/hot.wxss */
+
+/*---------------------------block6---------------------------*/
+.block6{
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.block6 .top{
+  height: 100rpx;
+  position: relative;
+}
+
+.block6 .top .line{
+  width: 30%;
+  height: 2px;
+  background: #ccc;
+  /* 定位居中 */
+  position: absolute;
+  left: 0;top: 0;right: 0;bottom: 0;
+  margin: auto;
+}
+
+.block6 .top .title{
+  width: 24%;
+  background: #fff;
+  position: absolute;
+  left: 0;top: 0;right: 0;bottom: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 100rpx;
+}
+
+.down1{
+  border-top: 2rpx solid #ccc;
+  padding: 40rpx 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.down1>view{
+  width: 48%;
+  margin-bottom: 20rpx;
+}
+
+.down1>view image{
+  width: 100%;
+  height: 250rpx;
+  border-radius: 8rpx;
+}
+
+.down1>view view{
+  font-size: 28rpx;
+}

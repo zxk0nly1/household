@@ -1,14 +1,75 @@
+<!--index.wxml-->
 <view class="container">
   <view class="page-body">
     <view class="page-section page-section-spacing swiper">
-      <swiper indicator-dots="{{indicatorDots}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="changeFn">
         <block wx:for="{{background}}" wx:key="*this">
           <swiper-item>
-              <image src="{{item}}"></image>
+            <image src="{{item}}"></image>
           </swiper-item>
         </block>
       </swiper>
+      <view class="indicator">
+        <view wx:for="{{background}}" wx:key="*this" class="{{num == index ? 'active' : ''}}"></view>
+      </view>
     </view>
   </view>
+  <view class="block2">
+    <view>
+      <image src="/images/home/02remai.png"></image>
+      <view>热卖</view>
+    </view>
+    <view>
+      <image src="/images/home/02beixin.png"></image>
+      <view>被芯</view>
+    </view>
+    <view>
+      <image src="/images/home/02zhentou.png"></image>
+      <view>枕头</view>
+    </view>
+    <view>
+      <image src="/images/home/02taojian.png"></image>
+      <view>套件</view>
+    </view>
+  </view>
+  <view class="block3">
+    <view class="top">
+      <view class="line"></view>
+      <view class="title">新品上市</view>
+    </view>
+    <view class="down">
+      <view class="page-section page-section-spacing swiper">
+        <swiper autoplay="{{autoplay1}}" interval="{{interval1}}" duration="{{duration1}}" bindchange="changeFn1">
+          <block wx:for="{{background1}}" wx:key="*this">
+            <swiper-item>
+              <image src="{{item}}"></image>
+            </swiper-item>
+          </block>
+        </swiper>
+        <view class="indicator">
+          <view wx:for="{{background1}}" wx:key="*this" class="{{num1 == index ? 'active' : ''}}"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="block4">
+    <image src="/images/home/04banner.jpg"></image>
+  </view>
+  <view class="block5">
+    <image src="/images/home/04left.jpg"></image>
+    <image src="/images/home/04right.jpg"></image>
+  </view>
+  <view class="block6 block3">
+    <view class="top">
+      <view class="line"></view>
+      <view class="title">热销产品</view>
+    </view>
+    <view class="down1">
+      <image src="/images/home/05-1.jpg"></image>
+      <image src="/images/home/05-2.jpg"></image>
+      <image src="/images/home/05-3.jpg"></image>
+      <image src="/images/home/05-4.jpg"></image>
+    </view>
+  </view>
+  <gua-kao bind:toTop="toTop"></gua-kao>
 </view>

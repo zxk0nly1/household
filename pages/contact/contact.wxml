@@ -1,3 +1,17 @@
-<view>
-  
+<!--pages/contact/contact.wxml-->
+<view class="container">
+  <image src="/images/contact/banner.jpg"></image>
+  <view class="info">
+    <view class="info_title">公司总部</view>
+    <view>地址:{{company.address}}</view>
+    <view>邮编:{{company.youbian}}</view>
+  </view>
+
+   <view class="info">
+    <view class="info_title">客服服务</view>
+    <view>客服热线:{{service.hotline}}</view>
+    <view>周一至周日:{{service.workday}}</view>
+    <view>邮箱:{{service.email}}</view>
+  </view>
 </view>
+<gua-kao bind:toTop="toTop"></gua-kao>

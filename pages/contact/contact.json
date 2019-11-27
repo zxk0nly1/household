@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "gua-kao": "/components/guakao/guakao"
+  },
   "navigationBarTitleText": "联系我们"
 }
